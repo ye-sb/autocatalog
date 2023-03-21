@@ -1,0 +1,14 @@
+
+Запросы на выборку из бд
+выборка всех данных по машинам в анкету select_users = "SELECT car.id_pas,`marka`,`model`,car.gosnomer,`vin`,`type_car`,`type_cat`,`power`,`photo` FROM `car` inner join `pasport` on car.id_pas=pasport.id_pasport"
+DELETE FROM `pasport` inner join `car` on `pasport`.`id_pasport`=`car`.`id_pas` where `car`.`id_cat`= `1`
+
+SELECT `id_pasport` FROM `pasport` inner join `car` on `pasport`.`id_pasport`=`car`.`id_pas` where `car`.`id_cat`=1
+
+
+SELECT * FROM `pasport` inner join `car` on `pasport`.`id_pasport`=`car`.`id_pas` WHERE`car`.`id_cat`=1
+
+
+там кароче у тебя два удаления а так как ты вызваешь функцию много раз то сделай в команду в кнопке запрос и айди удаления и просто измени в функции код
+
+как сделать моментальное обноелние после удаления или редактирования чего либо
